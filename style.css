@@ -36,9 +36,8 @@ header {
 header > p {
     cursor: pointer;
     color: white;
-    margin: auto 10px;
+    margin: auto 20px;
     font-size: 20px;
-    margin-left: 15px;
 }
 #hero {
     background: url("images/hero-wave.svg") no-repeat bottom, linear-gradient(#5B76FF, #312EFF);
@@ -73,12 +72,16 @@ header > p {
     color: black;
 }
 @media (max-width: 617px) {
+    #hero {
+        height: 95vh;
+    }
     #hero-title {
-        margin-top: 33vh;
+        margin-top: 22vh;
         font-size: 13.5vw;
     }
     #hero-description {
-        font-size: 0;
+        font-size: 6vw;
+        margin: 0 4vw;
     }
     #hero-button {
         display: none;
@@ -177,11 +180,11 @@ footer > p {
 footer > p:nth-child(3) {
     margin-left: auto;
 }
-@media (max-width: 419px) {
+@media (max-width: 413px) {
     footer > p:nth-child(3) {
         margin: auto 20px;
     }
     footer {
-        justify-content: center;
+        justify-content: space-around;
     }
 }
