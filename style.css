@@ -69,7 +69,6 @@ header > p {
     font-weight: 500;
     cursor: pointer;
     margin-top: 5.5vh;
-    display: visible;
     color: black;
 }
 @media (max-width: 617px) {
@@ -81,6 +80,7 @@ header > p {
         font-size: 0;
     }
     #hero-button {
+        display: none;
         position: absolute;
         left: 50%;
         transform: translate(-50%, 0);
