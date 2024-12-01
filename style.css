@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --tile-border-radius: 50px;
+}
+body {
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+section {
+    background-color: #EEE;
+    text-align: center;
+}
+mark {
+    color: #FADC4D;
+    background-color: transparent;
+}
+#logo {
+    position: absolute;
+    width: 75px;
+    padding: 10px;
+    cursor: pointer;
+}
+header {
+    position: absolute;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    right: 0;
+    width: 100%;
+}
+header > p {
+    cursor: pointer;
+    color: white;
+    margin: auto 20px;
+    font-size: 20px;
+}
+#hero {
+    background: url("images/hero-wave.svg") no-repeat bottom, linear-gradient(#5B76FF, #312EFF);
+    height: 100vh;
+    color: white;
+}
+#hero-title {
+    font-size: 75px;
+    margin: 16.5% 10vw 3vh;
+}
+#hero-description {
+    font-size: 33px;
+    font-weight: 600;
+    margin: 0 20vw;
+}
+#hero-button {
+    font-family: "Noto Sans", sans-serif;
+    background-color: #FADC4D;
+    border: none;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 27px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 5.5vh;
+}
+#features {
+    height: auto;
+    background: url("images/features-wave.svg") center no-repeat, #EEE;
+    background-size: 120%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media (max-width: 1516px) {
+    #features {
+        background-position-y: 25%;
+    }
+}
+@media (max-width: 1016px) {
+    #features {
+        background: #EEE;
+    }
+}
+.tile {
+    aspect-ratio: 7/10;
+    width: 400px;
+    margin: 50px 50px;
+}
+.tile-image {
+    border-top-left-radius: var(--tile-border-radius);
+    border-top-right-radius: var(--tile-border-radius);
+    height: 60%;
+}
+.tile-description {
+    border-bottom-left-radius: var(--tile-border-radius);
+    border-bottom-right-radius: var(--tile-border-radius);
+    height: 40%;
+    background: linear-gradient(#506CFF, #4340FF);
+    color: white;
+}
+.tile-description > h1 {
+    margin-top: 0;
+    font-size: 35px;
+    font-weight: 700;
+}
+.tile-description > p {
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+#tile-image-1 {
+    background: url("images/tile-image-1.svg") center no-repeat, #506CFF;
+    background-size: 65% 65%, 100% 100%;
+}
+#tile-image-2 {
+    background: url("images/tile-image-2.svg") center no-repeat, #506CFF;
+    background-size: 60% 60%, 100% 100%;
+}#tile-image-3 {
+    background: url("images/tile-image-3.svg") center no-repeat, #506CFF;
+    background-size: 60% 60%, 100% 100%;
+}
+#downloads {
+    height: 0;
+}
+footer {
+    background-color: #E4E4E4;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer > p {
+    color: #636363;
+    margin: auto 20px;
+    font-size: 17px;
+}
+footer > p:nth-child(3) {
+    margin-left: auto;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Stemlo</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <p onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">O nas</p>
+            <p onclick="window.location = 'http://instagram.com'">Kontakt</p>
+        </header>
+        <img id="logo" src="images/logo.png" onclick="window.location = 'http://stemlo.pl'">
+        <main>
+            <section id="hero">
+                <h1 id="hero-title">Pomożemy Ci z <mark>chemią.</mark></h1>
+                <p id="hero-description">Tworzymy <mark>celującą</mark> aplikację
+                    od uczenia się przedmiotów ścisłych dla uczniów klas 7-8</p>
+                <button id="hero-button" onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
+                    Dowiedz się więcej</button>
+            </section>
+            <section id="features">
+                <div class="tile">
+                    <div class="tile-image" id="tile-image-1"></div>
+                    <div class="tile-description">
+                        <h1><mark>Proste</mark> tłumaczenia.</h1>
+                        <p>W Stemlo, wszystkie lekcje będą tłumaczone w <mark>prosty i przystępny sposób</mark>
+                            - nie musisz być w tym świetny żeby zrozumieć.</p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="tile-image" id="tile-image-2"></div>
+                    <div class="tile-description">
+                        <h1><mark>Ty</mark> ustalasz tempo.</h1>
+                        <p>Chcesz się uczyć po kolei, czy może potrzebujesz materiału na konkretną lekcję?
+                            Ze Stemlo to <mark>Ty będziesz ustalać swój tok uczenia.</mark></p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <div class="tile-image" id="tile-image-3"></div>
+                    <div class="tile-description">
+                        <h1>Wszystko <mark>bez opłat.</mark></h1>
+                        <p>Naszym celem jest ułatwienie Wam edukacji - dlatego nie wymagamy żadnych opłat,
+                            i cały materiał będzie <mark>za darmo.</mark></p>
+                    </div>
+                </div>
+            </section>
+            <section id="downloads">
+            </section>
+        </main>
+        <footer>
+            <p class="link" onclick="window.location = 'http://instagram.com'">Kontakt</p>
+            <p class="link">Regulamin</p>
+            <p>Stemlo 2024. Praca w toku.</p>
+        </footer>
+    </body>
+</html> 
