@@ -70,6 +70,7 @@ header > p {
     cursor: pointer;
     margin-top: 5.5vh;
     display: visible;
+    color: black;
 }
 @media (max-width: 617px) {
     #hero-title {
