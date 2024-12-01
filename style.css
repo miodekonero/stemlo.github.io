@@ -179,12 +179,13 @@ footer > p {
 }
 footer > p:nth-child(3) {
     margin-left: auto;
+    color: #888
 }
-@media (max-width: 413px) {
+@media (max-width: 419px) {
     footer > p:nth-child(3) {
         margin: auto 20px;
     }
     footer {
-        justify-content: space-around;
+        justify-content: center;
     }
 }
