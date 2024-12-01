@@ -46,7 +46,12 @@ header > p {
 }
 #hero-title {
     font-size: 75px;
-    margin: 16.5% 10vw 3vh;
+    margin: 30vh 13vw 3vh;
+}
+@media (max-width: 1199px) {
+    #hero-title {
+        margin-top: 25%;
+    }
 }
 #hero-description {
     font-size: 33px;
@@ -64,6 +69,26 @@ header > p {
     font-weight: 500;
     cursor: pointer;
     margin-top: 5.5vh;
+    display: visible;
+}
+@media (max-width: 617px) {
+    #hero-title {
+        margin-top: 33vh;
+        font-size: 13.5vw;
+    }
+    #hero-description {
+        font-size: 0;
+    }
+    #hero-button {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 2vh;
+        background-color: transparent;
+        text-decoration: underline;
+        font-size: 24px;
+        font-weight: 400;
+    }
 }
 #features {
     height: auto;
@@ -111,6 +136,15 @@ header > p {
     padding: 0 10px;
     font-size: 20px;
     font-weight: 500;
+}
+@media (max-width: 500px) {
+    .tile-description > h1 {
+        font-size: 6vw;
+    }
+    .tile-description > p {
+        margin-top: 0;
+        font-size: 4vw;
+    }
 }
 #tile-image-1 {
     background: url("images/tile-image-1.svg") center no-repeat, #506CFF;
