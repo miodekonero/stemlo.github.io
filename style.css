@@ -150,6 +150,9 @@ header > p {
         margin-top: 0;
         font-size: 4vw;
     }
+    header {
+        visibility: hidden;
+    }
 }
 #tile-image-1 {
     background: url("images/tile-image-1.svg") center no-repeat, #506CFF;
@@ -178,7 +181,7 @@ footer {
 footer > p {
     color: #636363;
     margin: auto 20px;
-    font-size: 17px;
+    font-size: 100%;
 }
 footer > p:nth-child(3) {
     margin-left: auto;
