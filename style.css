@@ -162,8 +162,11 @@ header > p {
     background: url("images/tile-image-3.svg") center no-repeat, #506CFF;
     background-size: 60% 60%, 100% 100%;
 }
-#downloads {
-    height: 0;
+#wip-notice {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding: 30px;
+    font-size: 20px;
 }
 footer {
     background-color: #E4E4E4;
