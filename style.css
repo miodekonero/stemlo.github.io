@@ -76,7 +76,7 @@ header > img {
 }
 #hero > button {
     font-family: "Noto Sans", sans-serif;
-    background: linear-gradient(#ffee9c, #FADC4D);
+    background: linear-gradient(#FADC4D, #FADC4D);
     border: none;
     box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
     width: 300px;
