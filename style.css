@@ -87,15 +87,6 @@ header > img {
     margin-top: 5.5vh;
     color: black;
 }
-#hero > img {
-    width: 100px;
-    height: auto;
-    position: absolute;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
-
-}
 @media (max-width: 1000px) {
     #hero-title {
         margin-top: 25%;
