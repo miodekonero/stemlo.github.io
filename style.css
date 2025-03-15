@@ -118,30 +118,43 @@ header > img {
 }
 
 /* Features section */
+@keyframes featuresWaveProgression {
+    0% {background-position-x: 100%};
+    100% {background-position-x: 50%};
+}
 #features {
     height: auto;
     background: url("images/features-wave.svg") center no-repeat, #EEE;
     background-size: 120%;
+    background-position-x: 50%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    animation: featuresWaveProgression 5s ease-in-out infinite alternate;
 }
 @media (max-width: 1516px) {
     #features {
-        background-position-y: 25%;
+        background-position-y: 0;
+        background-repeat: no-repeat;
+        background-size: 200% 50%
     }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1017px) {
     #features {
-        background: #EEE;
+        background-position-y: 0px;
+        background-repeat: repeat-y;
+        background-size: 250% 33.33%;
     }
 }
 .tile {
     aspect-ratio: 7/10;
     width: 400px;
     margin: 25px 50px;
+    border-color: #EEE;
+    border-width: 0;
+    border-style: solid;
 }
 .tile-image {
     border-top-left-radius: 50px;
