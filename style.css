@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-:root {
-    --tile-border-radius: 50px;
-}
 
-/* Website wide */
+/* Global */
 body {
     margin: 0;
     font-family: "Noto Sans", sans-serif;
+    background: #EEE;
+    overflow-x: hidden;
 }
 main {
     display: flex;
@@ -21,7 +20,7 @@ mark {
     background-color: transparent;
 }
 
-/* Footer */
+/* Header */
 #logo {
     position: absolute;
     width: 75px;
@@ -42,6 +41,22 @@ header > p {
     color: white;
     margin: auto 20px;
     font-size: 20px;
+    display: block;
+}
+header > img {
+    cursor: pointer;
+    margin: auto 10px;
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+@media (max-width: 500px) {
+    header > p {
+        display: none;
+    }
+    header > img {
+        display: block;
+    }
 }
 
 /* Hero section */
@@ -50,21 +65,16 @@ header > p {
     height: 100vh;
     color: white;
 }
-#hero-title {
+#hero > h1 {
     font-size: 75px;
-    margin: 30vh 13vw 3vh;
+    margin: 30vh 17.5vw 3vh;
 }
-@media (max-width: 1199px) {
-    #hero-title {
-        margin-top: 25%;
-    }
-}
-#hero-description {
+#hero > h2 {
     font-size: 33px;
     font-weight: 600;
     margin: 0 20vw;
 }
-#hero-button {
+#hero > button {
     font-family: "Noto Sans", sans-serif;
     background-color: #FADC4D;
     border: none;
@@ -76,6 +86,20 @@ header > p {
     cursor: pointer;
     margin-top: 5.5vh;
     color: black;
+}
+#hero > img {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+
+}
+@media (max-width: 1000px) {
+    #hero-title {
+        margin-top: 25%;
+    }
 }
 @media (max-width: 617px) {
     #hero {
@@ -129,13 +153,13 @@ header > p {
     margin: 25px 50px;
 }
 .tile-image {
-    border-top-left-radius: var(--tile-border-radius);
-    border-top-right-radius: var(--tile-border-radius);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     height: 60%;
 }
 .tile-description {
-    border-bottom-left-radius: var(--tile-border-radius);
-    border-bottom-right-radius: var(--tile-border-radius);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     height: 40%;
     background: linear-gradient(#506CFF, #4340FF);
     color: white;
@@ -158,9 +182,6 @@ header > p {
         margin-top: 0;
         font-size: 4vw;
     }
-    header {
-        visibility: hidden;
-    }
 }
 #tile-image-1 {
     background: url("images/tile-image-1.svg") center no-repeat, #506CFF;
@@ -169,7 +190,8 @@ header > p {
 #tile-image-2 {
     background: url("images/tile-image-2.svg") center no-repeat, #506CFF;
     background-size: 60% 60%, 100% 100%;
-}#tile-image-3 {
+}
+#tile-image-3 {
     background: url("images/tile-image-3.svg") center no-repeat, #506CFF;
     background-size: 60% 60%, 100% 100%;
 }
