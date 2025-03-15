@@ -2,6 +2,8 @@
 :root {
     --tile-border-radius: 50px;
 }
+
+/* Website wide */
 body {
     margin: 0;
     font-family: "Noto Sans", sans-serif;
@@ -18,6 +20,8 @@ mark {
     color: #FADC4D;
     background-color: transparent;
 }
+
+/* Footer */
 #logo {
     position: absolute;
     width: 75px;
@@ -39,6 +43,8 @@ header > p {
     margin: auto 20px;
     font-size: 20px;
 }
+
+/* Hero section */
 #hero {
     background: url("images/hero-wave.svg") no-repeat bottom, linear-gradient(#5B76FF, #312EFF);
     height: 100vh;
@@ -84,17 +90,14 @@ header > p {
         margin: 0 4vw;
     }
     #hero-button {
-        display: none;
         position: absolute;
+        bottom: 3%;
         left: 50%;
-        transform: translate(-50%, 0);
-        bottom: 2vh;
-        background-color: transparent;
-        text-decoration: underline;
-        font-size: 24px;
-        font-weight: 400;
+        transform: translate(-50%, -50%);
     }
 }
+
+/* Features section */
 #features {
     height: auto;
     background: url("images/features-wave.svg") center no-repeat, #EEE;
@@ -110,9 +113,9 @@ header > p {
         background-position-y: 25%;
     }
 }
-@media (max-width: 1016px) {
+@media (max-width: 1000px) {
     #features {
-        background: #EEE;
+        background-color: #EEE;
     }
 }
 .tile {
@@ -165,12 +168,16 @@ header > p {
     background: url("images/tile-image-3.svg") center no-repeat, #506CFF;
     background-size: 60% 60%, 100% 100%;
 }
+
+/* WIP notice section */
 #wip-notice {
     padding-top: 30px;
     padding-bottom: 30px;
     padding: 30px;
     font-size: 20px;
 }
+
+/* Footer */
 footer {
     background-color: #E4E4E4;
     height: 70px;
@@ -185,7 +192,6 @@ footer > p {
 }
 footer > p:nth-child(3) {
     margin-left: auto;
-    color: #888
 }
 @media (max-width: 419px) {
     footer > p:nth-child(3) {
