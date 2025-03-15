@@ -91,9 +91,11 @@ header > p {
     }
     #hero-button {
         position: absolute;
-        bottom: 3%;
+        bottom: 2%;
         left: 50%;
         transform: translate(-50%, -50%);
+        width: 230px;
+        font-size: 21px;
     }
 }
 
@@ -115,7 +117,7 @@ header > p {
 }
 @media (max-width: 1000px) {
     #features {
-        background-color: #EEE;
+        background: #EEE;
     }
 }
 .tile {
