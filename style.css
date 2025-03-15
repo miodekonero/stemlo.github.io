@@ -80,9 +80,10 @@ header > p {
 @media (max-width: 617px) {
     #hero {
         height: 95vh;
+        padding: 20px 0;
     }
     #hero-title {
-        margin-top: 22vh;
+        margin-top: 20vh;
         font-size: 13.5vw;
     }
     #hero-description {
@@ -91,11 +92,13 @@ header > p {
     }
     #hero-button {
         position: absolute;
-        bottom: 2%;
+        bottom: -1%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 230px;
         font-size: 21px;
+        background-color: #DEDEDE;
+        color: #333;
     }
 }
 
@@ -123,7 +126,7 @@ header > p {
 .tile {
     aspect-ratio: 7/10;
     width: 400px;
-    margin: 50px 50px;
+    margin: 25px 50px;
 }
 .tile-image {
     border-top-left-radius: var(--tile-border-radius);
