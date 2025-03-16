@@ -62,6 +62,7 @@ header > img {
 /* Hero section */
 #hero {
     background: url("images/hero-wave.svg") no-repeat bottom, linear-gradient(#5B76FF, #312EFF);
+    background-size: 100% auto;
     height: 100vh;
     color: white;
 }
@@ -76,7 +77,7 @@ header > img {
 }
 #hero > button {
     font-family: "Noto Sans", sans-serif;
-    background: linear-gradient(#FADC4D, #FADC4D);
+    background-color: #FADC4D;
     border: none;
     box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
     width: 300px;
@@ -87,6 +88,10 @@ header > img {
     cursor: pointer;
     margin-top: 5.5vh;
     color: black;
+    transition: box-shadow 0.5s ease;
+}
+#hero > button:hover {
+    box-shadow: 0 0 5px 5px rgba(250, 220, 77, .5);
 }
 @media (max-width: 1000px) {
     #hero-title {
