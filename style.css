@@ -43,19 +43,14 @@ header > p {
     font-size: 20px;
     display: block;
 }
-header > img {
-    cursor: pointer;
-    margin: auto 10px;
-    width: 30px;
-    height: 30px;
-    display: none;
-}
 @media (max-width: 500px) {
+    #logo {
+        padding: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
     header > p {
         display: none;
-    }
-    header > img {
-        display: block;
     }
 }
 
